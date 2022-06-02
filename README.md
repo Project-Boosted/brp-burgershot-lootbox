@@ -8,54 +8,38 @@
 
 # Add Server.lua stuff to your server.lua - jim-burgershot
 
-Thank To Some Help We have a MurderMeal Creation For jim-Burgershot Link Here : https://jimathy666.tebex.io/package/4834946
+Thank To Some Help We have a MurderMeal Creation For Jim-Burgershot Link Here : https://jimathy666.tebex.io/package/4834946
 
 add this to your client.lua
 
 ```lua
--- Murder Meal
-RegisterNetEvent("jim-burgershot:MurderMeal")
-AddEventHandler("jim-burgershot:MurderMeal", function()
-    local randomToy = math.random(1,10)
-    --remove box
-    TriggerServerEvent('QBCore:Server:RemoveItem', "burger-murdermeal", 1)
-    --add items from box
-    TriggerServerEvent('QBCore:Server:AddItem', "heartstopper", 1)
-    TriggerServerEvent('QBCore:Server:AddItem', "milkshake", 1)
-    TriggerServerEvent('QBCore:Server:AddItem', "bscoke", 1)
-    TriggerServerEvent('QBCore:Server:AddItem', "rimjob", 1)
-    TriggerServerEvent('QBCore:Server:AddItem', "shotfries", 1)
-    if randomToy == 1 then
-        TriggerServerEvent('QBCore:Server:AddItem', "avatar_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["avatar_box"], "add")
-    elseif randomToy == 2 then
-        TriggerServerEvent('QBCore:Server:AddItem', "hulk_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["hulk_box"], "add")
-    elseif randomToy == 3 then
-        TriggerServerEvent('QBCore:Server:AddItem', "disney_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["disney_box"], "add")
-    elseif randomToy == 4 then
-        TriggerServerEvent('QBCore:Server:AddItem', "wwe_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["wwe_box"], "add")
-    elseif randomToy == 5 then
-        TriggerServerEvent('QBCore:Server:AddItem', "horror_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["horror_box"], "add")
-    elseif randomToy == 6 then
-        TriggerServerEvent('QBCore:Server:AddItem', "malewwe_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["malewwe_box"], "add")
-    elseif randomToy == 7 then
-        TriggerServerEvent('QBCore:Server:AddItem', "nba_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["nba_box"], "add")
-    elseif randomToy == 8 then
-        TriggerServerEvent('QBCore:Server:AddItem', "tmnt_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["tmnt_box"], "add")
-    elseif randomToy == 9 then
-        TriggerServerEvent('QBCore:Server:AddItem', "office_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["office_box"], "add")
-    elseif randomToy == 10 then
-        TriggerServerEvent('QBCore:Server:AddItem', "music_box", 1)
-        TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["music_box"], "add")
-    end
+-- Murder Meal Box
+RegisterNetEvent("jim-burgershot:MurderMeal", function()
+	-- Remove box item
+	TriggerServerEvent('QBCore:Server:RemoveItem', "burger-murdermeal", 1)
+	-- Add items from box
+	for _, v in pairs({"heartstopper", "milkshake", "bscoke", "rimjob", "shotfries"}) do
+		TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[v], "add")
+		TriggerServerEvent('QBCore:Server:AddItem', v, 1)
+	end
+	-- Make the prize list
+	local prizePool = {
+		"avatar_box",
+		"hulk_box",
+		"disney_box",
+		"wwe_box",
+		"horror_box",
+		"malewwe_box",
+		"nba_box",
+		"tmnt_box",
+		"office_box",
+		"music_box",
+	}
+	-- Grab the Prize form the list
+	local prize = prizePool[math.random(1, #prizePool)]
+	--Give the prize
+	TriggerServerEvent('QBCore:Server:AddItem', prize, 1)
+	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[prize], "add")
 end)
 ```
 
