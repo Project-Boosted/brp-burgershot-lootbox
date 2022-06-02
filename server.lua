@@ -10,4 +10,3 @@ QBCore.Functions.CreateUseableItem("nba_box", function(source, item) local Playe
 QBCore.Functions.CreateUseableItem("tmnt_box", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("jim-burgershot:TmntBox", source, item.name) end)
 QBCore.Functions.CreateUseableItem("office_box", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("jim-burgershot:OfficeBox", source, item.name) end)
 QBCore.Functions.CreateUseableItem("music_box", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("jim-burgershot:MusicBox", source, item.name) end)
-QBCore.Functions.CreateUseableItem("burger-murdermeal", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("jim-burgershot:MurderMeal", source, item.name) end)
