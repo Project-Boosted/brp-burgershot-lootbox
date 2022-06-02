@@ -14,8 +14,8 @@ add this to your client.lua
 
 ```lua
 -- Murder Meal
-RegisterNetEvent("brp-burgershot:MurderMeal")
-AddEventHandler("brp-burgershot:MurderMeal", function()
+RegisterNetEvent("jim-burgershot:MurderMeal")
+AddEventHandler("jim-burgershot:MurderMeal", function()
     local randomToy = math.random(1,10)
     --remove box
     TriggerServerEvent('QBCore:Server:RemoveItem', "burger-murdermeal", 1)
