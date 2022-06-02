@@ -1,36 +1,5 @@
 -- Add these to you jim-burgershot Client.lua
 
---Meal Creations
-RegisterNetEvent("jim-burgershot:MurderMeal")
-AddEventHandler("jim-burgershot:MurderMeal", function()
-	local randomToy = math.random(1,10)
-	--remove box
-	TriggerServerEvent('QBCore:Server:RemoveItem', "burger-murdermeal", 1)
-	--add items from box
-	TriggerServerEvent('QBCore:Server:AddItem', "heartstopper", 1)
-	TriggerServerEvent('QBCore:Server:AddItem', "milkshake", 1)
-	TriggerServerEvent('QBCore:Server:AddItem', "shotfries", 1)
-
-	if randomToy < 4 then
-		QBCore.Functions.Notify("No toy in Box Looool", "error")
-	elseif randomToy == 4 then
-		TriggerServerEvent('QBCore:Server:AddItem', "burger-toy1", 1)
-		TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["burger-toy1"], "add")
-	elseif randomToy < 7 and randomToy > 4 then
-		QBCore.Functions.Notify("No toy in Box Looool", "error")
-	elseif randomToy == 7 then
-		TriggerServerEvent('QBCore:Server:AddItem', "burger-toy2", 1)
-		TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["burger-toy2"], "add")
-	elseif randomToy < 10 and randomToy > 7 then
-		QBCore.Functions.Notify("No toy in Box Looool", "error")
-	elseif randomToy == 10 then
-		TriggerServerEvent('QBCore:Server:AddItem', "boosterpack", 1)
-		TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items["boosterpack"], "add")
-	else
-		QBCore.Functions.Notify("No toy in Box Looool", "error")
-	end
-end)
-
 --Loot Box Creations 1
 RegisterNetEvent("jim-burgershot:AvatarBox")
 AddEventHandler("jim-burgershot:AvatarBox", function()
