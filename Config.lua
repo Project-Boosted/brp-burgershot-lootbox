@@ -1,4 +1,8 @@
    -- Add these to your Shared.Items.lua in qb-core 
+
+    -- Meal Box
+	["burger-murdermeal"] 		 = {["name"] = "burger-murdermeal", 	["label"] = "Murder Meal", 		["weight"] = 125, 		["type"] = "item", 		["image"] = "mystorymeal.png", 			["unique"] = false, 		["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "An Amazing Murder Meal with a chance of a toy."},
+	
     
     -- Loot Box's
 	['avatar_box'] 			 = {['name'] = 'avatar_box', 		['label'] = 'Avatar Box', 		['weight'] = 1000, 		['type'] = 'item',	['ammotype'] = nil, 	['image'] = 'mystorymeal.png', 		['unique'] = false, 		['useable'] = true, 	["shouldClose"] = true,    ["combinable"] = nil,     	  	['description'] = 'Avatar Box'},
