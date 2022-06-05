@@ -1,7 +1,10 @@
 -- Add these to you jim-burgershot Client.lua
 
+
+
 --Loot Box Creations 1
-RegisterNetEvent("jim-burgershot:AvatarBox", function()
+RegisterNetEvent("brp-burgershot:AvatarBox")
+AddEventHandler("brp-burgershot:AvatarBox", function()
     local randomToy = math.random(1,100)
     TriggerServerEvent('QBCore:Server:RemoveItem', "avatar_box", 1)
 
@@ -61,7 +64,8 @@ RegisterNetEvent("jim-burgershot:AvatarBox", function()
 end)
 
 --Loot Box Creations 2
-RegisterNetEvent("jim-burgershot:HulkBox", function()
+RegisterNetEvent("brp-burgershot:HulkBox")
+AddEventHandler("brp-burgershot:HulkBox", function()
     local randomToy = math.random(1,60)
     TriggerServerEvent('QBCore:Server:RemoveItem', "hulk_box", 1)
 
@@ -101,7 +105,8 @@ RegisterNetEvent("jim-burgershot:HulkBox", function()
 end)
 
 --Loot Box Creations 3
-RegisterNetEvent("jim-burgershot:DisneyBox", function()
+RegisterNetEvent("brp-burgershot:DisneyBox")
+AddEventHandler("brp-burgershot:DisneyBox", function()
     local randomToy = math.random(1,80)
     TriggerServerEvent('QBCore:Server:RemoveItem', "disney_box", 1)
 
@@ -151,7 +156,8 @@ RegisterNetEvent("jim-burgershot:DisneyBox", function()
 end)
 
 --Loot Box Creations 4
-RegisterNetEvent("jim-burgershot:WweBox", function()
+RegisterNetEvent("brp-burgershot:WweBox")
+AddEventHandler("brp-burgershot:WweBox", function()
     local randomToy = math.random(1,110)
     TriggerServerEvent('QBCore:Server:RemoveItem', "wwe_box", 1)
 
@@ -216,7 +222,8 @@ RegisterNetEvent("jim-burgershot:WweBox", function()
 end)
 
 --Loot Box Creations 5
-RegisterNetEvent("jim-burgershot:HorrorBox", function()
+RegisterNetEvent("brp-burgershot:HorrorBox")
+AddEventHandler("brp-burgershot:HorrorBox", function()
     local randomToy = math.random(1,130)
     TriggerServerEvent('QBCore:Server:RemoveItem', "horror_box", 1)
 
@@ -291,7 +298,8 @@ RegisterNetEvent("jim-burgershot:HorrorBox", function()
 end)
 
 --Loot Box Creations 6
-RegisterNetEvent("jim-burgershot:MalewweBox", function()
+RegisterNetEvent("brp-burgershot:MalewweBox")
+AddEventHandler("brp-burgershot:MalewweBox", function()
     local randomToy = math.random(1,190)
     TriggerServerEvent('QBCore:Server:RemoveItem', "malewwe_box", 1)
 
@@ -396,7 +404,8 @@ RegisterNetEvent("jim-burgershot:MalewweBox", function()
 end)
 
 --Loot Box Creations 7
-RegisterNetEvent("jim-burgershot:NbaBox", function()
+RegisterNetEvent("brp-burgershot:NbaBox")
+AddEventHandler("brp-burgershot:NbaBox", function()
     local randomToy = math.random(1,100)
     TriggerServerEvent('QBCore:Server:RemoveItem', "nba_box", 1)
 
@@ -456,7 +465,8 @@ RegisterNetEvent("jim-burgershot:NbaBox", function()
 end)
 
 --Loot Box Creations 8
-RegisterNetEvent("jim-burgershot:TmntBox", function()
+RegisterNetEvent("brp-burgershot:TmntBox")
+AddEventHandler("brp-burgershot:TmntBox", function()
     local randomToy = math.random(1,180)
     TriggerServerEvent('QBCore:Server:RemoveItem', "tmnt_box", 1)
 
@@ -556,7 +566,8 @@ RegisterNetEvent("jim-burgershot:TmntBox", function()
 end)
 
 --Loot Box Creations 9
-RegisterNetEvent("jim-burgershot:OfficeBox", function()
+RegisterNetEvent("brp-burgershot:OfficeBox")
+AddEventHandler("brp-burgershot:OfficeBox", function()
     local randomToy = math.random(1,320)
     TriggerServerEvent('QBCore:Server:RemoveItem', "office_box", 1)
 
@@ -726,7 +737,8 @@ RegisterNetEvent("jim-burgershot:OfficeBox", function()
 end)
 
 --Loot Box Creations 10
-RegisterNetEvent("jim-burgershot:MusicBox", function()
+RegisterNetEvent("brp-burgershot:MusicBox")
+AddEventHandler("brp-burgershot:MusicBox", function()
     local randomToy = math.random(1,440)
     TriggerServerEvent('QBCore:Server:RemoveItem', "music_box", 1)
 
