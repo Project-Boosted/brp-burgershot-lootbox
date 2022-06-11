@@ -3,8 +3,8 @@
 
 
 --Loot Box Creations 1
-RegisterNetEvent("brp-burgershot:AvatarBox")
-AddEventHandler("brp-burgershot:AvatarBox", function()
+RegisterNetEvent("jim-burgershot:AvatarBox")
+AddEventHandler("jim-burgershot:AvatarBox", function()
     local randomToy = math.random(1,100)
     TriggerServerEvent('QBCore:Server:RemoveItem', "avatar_box", 1)
 
@@ -64,8 +64,8 @@ AddEventHandler("brp-burgershot:AvatarBox", function()
 end)
 
 --Loot Box Creations 2
-RegisterNetEvent("brp-burgershot:HulkBox")
-AddEventHandler("brp-burgershot:HulkBox", function()
+RegisterNetEvent("jim-burgershot:HulkBox")
+AddEventHandler("jim-burgershot:HulkBox", function()
     local randomToy = math.random(1,60)
     TriggerServerEvent('QBCore:Server:RemoveItem', "hulk_box", 1)
 
@@ -105,8 +105,8 @@ AddEventHandler("brp-burgershot:HulkBox", function()
 end)
 
 --Loot Box Creations 3
-RegisterNetEvent("brp-burgershot:DisneyBox")
-AddEventHandler("brp-burgershot:DisneyBox", function()
+RegisterNetEvent("jim-burgershot:DisneyBox")
+AddEventHandler("jim-burgershot:DisneyBox", function()
     local randomToy = math.random(1,80)
     TriggerServerEvent('QBCore:Server:RemoveItem', "disney_box", 1)
 
@@ -156,8 +156,8 @@ AddEventHandler("brp-burgershot:DisneyBox", function()
 end)
 
 --Loot Box Creations 4
-RegisterNetEvent("brp-burgershot:WweBox")
-AddEventHandler("brp-burgershot:WweBox", function()
+RegisterNetEvent("jim-burgershot:WweBox")
+AddEventHandler("jim-burgershot:WweBox", function()
     local randomToy = math.random(1,110)
     TriggerServerEvent('QBCore:Server:RemoveItem', "wwe_box", 1)
 
@@ -222,8 +222,8 @@ AddEventHandler("brp-burgershot:WweBox", function()
 end)
 
 --Loot Box Creations 5
-RegisterNetEvent("brp-burgershot:HorrorBox")
-AddEventHandler("brp-burgershot:HorrorBox", function()
+RegisterNetEvent("jim-burgershot:HorrorBox")
+AddEventHandler("jim-burgershot:HorrorBox", function()
     local randomToy = math.random(1,130)
     TriggerServerEvent('QBCore:Server:RemoveItem', "horror_box", 1)
 
@@ -298,8 +298,8 @@ AddEventHandler("brp-burgershot:HorrorBox", function()
 end)
 
 --Loot Box Creations 6
-RegisterNetEvent("brp-burgershot:MalewweBox")
-AddEventHandler("brp-burgershot:MalewweBox", function()
+RegisterNetEvent("jim-burgershot:MalewweBox")
+AddEventHandler("jim-burgershot:MalewweBox", function()
     local randomToy = math.random(1,190)
     TriggerServerEvent('QBCore:Server:RemoveItem', "malewwe_box", 1)
 
@@ -404,8 +404,8 @@ AddEventHandler("brp-burgershot:MalewweBox", function()
 end)
 
 --Loot Box Creations 7
-RegisterNetEvent("brp-burgershot:NbaBox")
-AddEventHandler("brp-burgershot:NbaBox", function()
+RegisterNetEvent("jim-burgershot:NbaBox")
+AddEventHandler("jim-burgershot:NbaBox", function()
     local randomToy = math.random(1,100)
     TriggerServerEvent('QBCore:Server:RemoveItem', "nba_box", 1)
 
@@ -465,8 +465,8 @@ AddEventHandler("brp-burgershot:NbaBox", function()
 end)
 
 --Loot Box Creations 8
-RegisterNetEvent("brp-burgershot:TmntBox")
-AddEventHandler("brp-burgershot:TmntBox", function()
+RegisterNetEvent("jim-burgershot:TmntBox")
+AddEventHandler("jim-burgershot:TmntBox", function()
     local randomToy = math.random(1,180)
     TriggerServerEvent('QBCore:Server:RemoveItem', "tmnt_box", 1)
 
@@ -566,8 +566,8 @@ AddEventHandler("brp-burgershot:TmntBox", function()
 end)
 
 --Loot Box Creations 9
-RegisterNetEvent("brp-burgershot:OfficeBox")
-AddEventHandler("brp-burgershot:OfficeBox", function()
+RegisterNetEvent("jim-burgershot:OfficeBox")
+AddEventHandler("jim-burgershot:OfficeBox", function()
     local randomToy = math.random(1,320)
     TriggerServerEvent('QBCore:Server:RemoveItem', "office_box", 1)
 
@@ -737,8 +737,8 @@ AddEventHandler("brp-burgershot:OfficeBox", function()
 end)
 
 --Loot Box Creations 10
-RegisterNetEvent("brp-burgershot:MusicBox")
-AddEventHandler("brp-burgershot:MusicBox", function()
+RegisterNetEvent("jim-burgershot:MusicBox")
+AddEventHandler("jim-burgershot:MusicBox", function()
     local randomToy = math.random(1,440)
     TriggerServerEvent('QBCore:Server:RemoveItem', "music_box", 1)
 
