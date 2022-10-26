@@ -1,5 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-QBCore.Functions.AddItems(Config.Items)
+--QBCore.Functions.AddItems(Config.Items)
 
 RegisterNetEvent("brp-lootbox:MurderMeal", function()
 	-- Remove box item
