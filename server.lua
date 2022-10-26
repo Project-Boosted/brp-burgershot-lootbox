@@ -13,8 +13,7 @@ QBCore.Functions.CreateUseableItem("office_box", function(source, item) local Pl
 QBCore.Functions.CreateUseableItem("music_box", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("brp-lootbox:MusicBox", source, item.name) end)
 QBCore.Functions.CreateUseableItem("burger-murdermeal", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("brp-lootbox:MurderMeal", source, item.name) end)
 
-RegisterNetEvent("brp-lootbox:server:toggleItem")
-AddEventHandler("brp-lootbox:server:toggleItem", function(give, item, amount, newsrc)
+RegisterNetEvent("brp-lootbox:server:toggleItem", function(give, item, amount, newsrc)
 	local src = newsrc or source
 	local amount = amount or 1
 	local remamount = amount

@@ -34,8 +34,7 @@ RegisterNetEvent("brp-lootbox:MurderMeal", function()
 end)
 
 --Loot Box Creations 1
-RegisterNetEvent("brp-lootbox:AvatarBox")
-AddEventHandler("brp-lootbox:AvatarBox", function()
+RegisterNetEvent("brp-lootbox:AvatarBox", function()
     local randomToy = math.random(1,100)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "avatar_box", 1)
 
@@ -95,8 +94,7 @@ AddEventHandler("brp-lootbox:AvatarBox", function()
 end)
 
 --Loot Box Creations 2
-RegisterNetEvent("brp-lootbox:HulkBox")
-AddEventHandler("brp-lootbox:HulkBox", function()
+RegisterNetEvent("brp-lootbox:HulkBox", function()
     local randomToy = math.random(1,60)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "hulk_box", 1)
 
@@ -136,8 +134,7 @@ AddEventHandler("brp-lootbox:HulkBox", function()
 end)
 
 --Loot Box Creations 3
-RegisterNetEvent("brp-lootbox:DisneyBox")
-AddEventHandler("brp-lootbox:DisneyBox", function()
+RegisterNetEvent("brp-lootbox:DisneyBox", function()
     local randomToy = math.random(1,80)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "disney_box", 1)
 
@@ -187,8 +184,7 @@ AddEventHandler("brp-lootbox:DisneyBox", function()
 end)
 
 --Loot Box Creations 4
-RegisterNetEvent("brp-lootbox:WweBox")
-AddEventHandler("brp-lootbox:WweBox", function()
+RegisterNetEvent("brp-lootbox:WweBox", function()
     local randomToy = math.random(1,110)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "wwe_box", 1)
 
@@ -253,8 +249,7 @@ AddEventHandler("brp-lootbox:WweBox", function()
 end)
 
 --Loot Box Creations 5
-RegisterNetEvent("brp-lootbox:HorrorBox")
-AddEventHandler("brp-lootbox:HorrorBox", function()
+RegisterNetEvent("brp-lootbox:HorrorBox", function()
     local randomToy = math.random(1,130)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "horror_box", 1)
 
@@ -329,8 +324,7 @@ AddEventHandler("brp-lootbox:HorrorBox", function()
 end)
 
 --Loot Box Creations 6
-RegisterNetEvent("brp-lootbox:MalewweBox")
-AddEventHandler("brp-lootbox:MalewweBox", function()
+RegisterNetEvent("brp-lootbox:MalewweBox", function()
     local randomToy = math.random(1,190)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "malewwe_box", 1)
 
@@ -435,8 +429,7 @@ AddEventHandler("brp-lootbox:MalewweBox", function()
 end)
 
 --Loot Box Creations 7
-RegisterNetEvent("brp-lootbox:NbaBox")
-AddEventHandler("brp-lootbox:NbaBox", function()
+RegisterNetEvent("brp-lootbox:NbaBox", function()
     local randomToy = math.random(1,100)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "nba_box", 1)
 
@@ -496,8 +489,7 @@ AddEventHandler("brp-lootbox:NbaBox", function()
 end)
 
 --Loot Box Creations 8
-RegisterNetEvent("brp-lootbox:TmntBox")
-AddEventHandler("brp-lootbox:TmntBox", function()
+RegisterNetEvent("brp-lootbox:TmntBox", function()
     local randomToy = math.random(1,180)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "tmnt_box", 1)
 
@@ -597,8 +589,7 @@ AddEventHandler("brp-lootbox:TmntBox", function()
 end)
 
 --Loot Box Creations 9
-RegisterNetEvent("brp-lootbox:OfficeBox")
-AddEventHandler("brp-lootbox:OfficeBox", function()
+RegisterNetEvent("brp-lootbox:OfficeBox", function()
     local randomToy = math.random(1,320)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "office_box", 1)
 
@@ -768,8 +759,7 @@ AddEventHandler("brp-lootbox:OfficeBox", function()
 end)
 
 --Loot Box Creations 10
-RegisterNetEvent("brp-lootbox:MusicBox")
-AddEventHandler("brp-lootbox:MusicBox", function()
+RegisterNetEvent("brp-lootbox:MusicBox", function()
     local randomToy = math.random(1,440)
     TriggerServerEvent("brp-lootbox:server:toggleItem", false, "music_box", 1)
 
