@@ -1,4 +1,4 @@
-name "brp-lootbox"
+name "brp-burgershot-lootbox"
 author "Project Boosted and tomtenberge"
 version "v1.0.1"
 description "Custom Lootboxes for Jim-Burgershot by Project Boosted"
