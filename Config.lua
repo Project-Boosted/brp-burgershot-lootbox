@@ -1,9 +1,10 @@
-   -- Add these to your Shared.Items.lua in qb-core 
-
+Config = {}
+Config.Debug = false
+--add items to the item shared
+Config.Items = {
     -- Meal Box
 	["burger-murdermeal"] 		 = {["name"] = "burger-murdermeal", 	["label"] = "Murder Meal", 		["weight"] = 125, 		["type"] = "item", 	["image"] = "mystorymeal.png", 	["unique"] = false, 		["useable"] = true, 		["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "An Amazing Murder Meal with a chance of a toy."},
 	
-    
     -- Loot Box's
 	['avatar_box'] 			 = {['name'] = 'avatar_box', 		['label'] = 'Avatar Box', 		['weight'] = 1000, 		['type'] = 'item',	['ammotype'] = nil, 	['image'] = 'mystorymeal.png', 		['unique'] = false, 		['useable'] = true, 	["shouldClose"] = true,    ["combinable"] = nil,     	  	['description'] = 'Avatar Box'},
 	['hulk_box'] 			 = {['name'] = 'hulk_box', 		['label'] = 'Hulk Box', 		['weight'] = 1000, 		['type'] = 'item',	['ammotype'] = nil, 	['image'] = 'mystorymeal.png', 		['unique'] = false, 		['useable'] = true, 	["shouldClose"] = true,    ["combinable"] = nil,     	  	['description'] = 'Hulk Box'},
@@ -198,3 +199,4 @@
 	['tupac2'] 			 = {['name'] = 'tupac2', 			['label'] = 'tupac2', 		['weight'] = 1000, 		['type'] = 'item',	['ammotype'] = nil, 	['image'] = 'tupac2.png', 		['unique'] = false, 		['useable'] = true, 	['description'] = 'Rappers 13/13'},
 	['viviancampbell'] 		 = {['name'] = 'viviancampbell', 		['label'] = 'viviancampbell', 	['weight'] = 1000, 		['type'] = 'item',	['ammotype'] = nil, 	['image'] = 'viviancampbell.png', 	['unique'] = false, 		['useable'] = true, 	['description'] = 'Def Leppard 5/5'},
 	['warpig'] 			 = {['name'] = 'warpig', 			['label'] = 'warpig', 		['weight'] = 1000, 		['type'] = 'item',	['ammotype'] = nil, 	['image'] = 'warpig.png', 		['unique'] = false, 		['useable'] = true, 	['description'] = 'Motorhead 2/2'},
+}
