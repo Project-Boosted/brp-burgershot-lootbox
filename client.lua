@@ -1,6 +1,5 @@
 local QBCore = exports['qb-core']:GetCoreObject()
---QBCore.Functions.AddItems(Config.Items)
-
+RegisterNetEvent('QBCore:Client:UpdateObject', function() QBCore = exports['qb-core']:GetCoreObject() end)
 RegisterNetEvent("brp-lootbox:MurderMeal", function()
 	-- Remove box item
 	if Config.Debug then print("^5Debug^7: murdermeal") end
@@ -8,7 +7,7 @@ RegisterNetEvent("brp-lootbox:MurderMeal", function()
 	if Config.Debug then print("^5Debug^7: removed murdermeal") end
 	-- Add items from box
 	for _, v in pairs({"heartstopper", "milkshake", "bscoke", "rimjob", "shotfries"}) do
-		TriggerClientEvent("inventory:client:ItemBox", QBCore.Shared.Items[v], "add")
+		TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[v], "add")
 		TriggerServerEvent("brp-lootbox:server:toggleItem", true, v, 1)
 		if Config.Debug then print("^5Debug^7: gave "..v) end
 	end
@@ -28,7 +27,7 @@ RegisterNetEvent("brp-lootbox:MurderMeal", function()
 	-- Grab the Prize form the list
 	local prize = prizePool[math.random(1, #prizePool)]
 	--Give the prize
-	TriggerEvent("brp-lootbox:server:toggleItem", true, prize, 1)
+	TriggerServerEvent("brp-lootbox:server:toggleItem", true, prize, 1)
 	if Config.Debug then print("^5Debug^7: gave "..prize) end
 	TriggerEvent("inventory:client:ItemBox", QBCore.Shared.Items[prize], "add")
 end)

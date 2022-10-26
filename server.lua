@@ -1,5 +1,4 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-QBCore.Functions.AddItems(Config.Items)
 --Define usable items
 QBCore.Functions.CreateUseableItem("avatar_box", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("brp-lootbox:AvatarBox", source, item.name) end)
 QBCore.Functions.CreateUseableItem("hulk_box", function(source, item) local Player = QBCore.Functions.GetPlayer(source) TriggerClientEvent("brp-lootbox:HulkBox", source, item.name) end)
