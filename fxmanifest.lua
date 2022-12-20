@@ -6,6 +6,6 @@ fx_version "cerulean"
 game "gta5"
 lua54 'yes'
 
-shared_scripts { 'config.lua', 'functions.lua' }
+shared_scripts { 'Config.lua', 'functions.lua' }
 server_scripts { 'server.lua' }
 client_scripts { 'client.lua' }
