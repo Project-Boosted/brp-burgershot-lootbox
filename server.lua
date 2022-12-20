@@ -1,10 +1,12 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
 --Define usable items
-local itemlist = { "avatar_box", "hulk_box", "disney_box", "wwe_box", "horror_box", "malewwe_box", "nba_box", "tmnt_box", "office_box", "music_box", "burger-murdermeal" }
-for k, v in pairs (itemlist) do QBCore.Functions.CreateUseableItem(k, function(source, item) TriggerClientEvent("brp-lootbox:openBox", source, item.name) end)
+local itemlist = { "avatar_box", "hulk_box", "disney_box", "wwe_box", "horror_box", "malewwe_box", "nba_box", "tmnt_box", "office_box", "music_box"}
+for _, v in pairs (itemlist) do QBCore.Functions.CreateUseableItem(v, function(source, item) TriggerClientEvent("brp-lootbox:openBox", source, item.name) end) end
 
-RegisterNetEvent("brp-lootbox:server:toggleItem", function(give, item, amount, newsrc)
+QBCore.Functions.CreateUseableItem("burger-murdermeal", function(source, item) TriggerClientEvent("brp-lootbox:burger-murdermeal", source, item.name) end)
+
+RegisterNetEvent("brp-lootbox:server:toggleItem", function(give, item, amount, newsrc
 	local src = newsrc or source
 	local amount = amount or 1
 	local remamount = amount
