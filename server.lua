@@ -6,7 +6,7 @@ for _, v in pairs (itemlist) do QBCore.Functions.CreateUseableItem(v, function(s
 
 QBCore.Functions.CreateUseableItem("burger-murdermeal", function(source, item) TriggerClientEvent("brp-lootbox:burger-murdermeal", source, item.name) end)
 
-RegisterNetEvent("brp-lootbox:server:toggleItem", function(give, item, amount, newsrc
+RegisterNetEvent("brp-lootbox:server:toggleItem", function(give, item, amount, newsrc)
 	local src = newsrc or source
 	local amount = amount or 1
 	local remamount = amount
