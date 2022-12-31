@@ -1,2 +1,2 @@
 Config = {}
-Config.Debug = true
+Config.Debug = false
