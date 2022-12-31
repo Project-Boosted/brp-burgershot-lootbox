@@ -60,5 +60,5 @@ function HasItem(source, items, amount)
 		return true
 	end
 	if Config.Debug then print("^5Debug^7: ^3HasItem^7: ^2Items ^1NOT FOUND^7") end
-	return false
+	return false  
 end
